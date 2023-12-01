@@ -122,7 +122,7 @@ function ConversationComponent(props) {
           {pickerVisible && (
             <Picker
               pickerStyle={{ position: "absolute", bottom: "60px" }}
-              onEmojiClick={( emoji) => {
+              onEmojiClick={(e, emoji) => {
                 setText(text + emoji.emoji);
                 togglePicker(false);
               }}
