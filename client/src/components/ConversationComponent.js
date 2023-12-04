@@ -108,7 +108,7 @@ function ConversationComponent(props) {
         </ProfileInfo>
       </ProfileHeader>
       <MessageContainer>
-        {messageList?.map((messageData,index) => (
+        {messageList?.map((messageData, index) => (
           <MessageDiv key={index} isYours={messageData.senderID === 0}>
             <Message isYours={messageData.senderID === 0}>
               {[messageData.text]}
